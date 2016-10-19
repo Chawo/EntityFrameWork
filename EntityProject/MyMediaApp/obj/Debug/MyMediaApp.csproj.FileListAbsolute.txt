@@ -1,0 +1,20 @@
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.exe.config
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.exe
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.pdb
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\EntityFramework.dll
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\EntityFramework.xml
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.exe
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.pdb
+C:\Users\KC\Desktop\Test Project\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.csprojResolveAssemblyReference.cache
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.exe.config
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.exe
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.pdb
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.exe
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\MyMediaApp.pdb
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\EntityFramework.dll
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\EntityFramework.xml
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KC\Source\Repos\EntityFrameWork\EntityProject\MyMediaApp\obj\Debug\MyMediaApp.csprojResolveAssemblyReference.cache
