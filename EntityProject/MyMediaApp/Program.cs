@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace MyMediaApp
 {
-    class Program :DbContext
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace MyMediaApp
             {
                 using (var ctx = new Media())
                 {
-                    Console.WriteLine("[1] Add a new Book\n[2] Print \n[3] Update \n[4] Delete");
+                    Console.WriteLine("[1] Add a new Book\n[2] Read \n[3] Update \n[4] Delete");
                 int input = int.Parse(Console.ReadLine());
                      
                     switch (input)
@@ -27,17 +27,17 @@ namespace MyMediaApp
                             string author = Console.ReadLine();
                             Console.WriteLine("Title: ");
                             string title = Console.ReadLine();
-                            Console.WriteLine("ISBN: ");
-                            int isbn = int.Parse(Console.ReadLine());
+                            //Console.WriteLine("ISBN: ");
+                            //int isbn = int.Parse(Console.ReadLine());
                             Books newbook = new Books()
                             {
                                 author = author,
                                 title = title,
-                                isbn = isbn
+                                //isbn = isbn
                             };
 
-                            ctx.Books.Add(newbook);
-                            ctx.SaveChanges();
+                            CRUD create = new CRUD();
+                            create.CreateBook(newbook);
                              
                          
                         break;

@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Books.cs" />
+    <Compile Include="CRUD.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Movies.cs" />
     <Compile Include="Papers.cs" />
