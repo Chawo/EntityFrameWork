@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMediaApp", "MyMediaApp\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst", "DBFirst\DBFirst.csproj", "{DBB344B5-EE7E-47F7-BE7A-DE5FC231F1C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSecond", "DBSecond\DBSecond.csproj", "{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 Database to model", "2.2 Database to model\2.2 Database to model.csproj", "{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{DBB344B5-EE7E-47F7-BE7A-DE5FC231F1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB344B5-EE7E-47F7-BE7A-DE5FC231F1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB344B5-EE7E-47F7-BE7A-DE5FC231F1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
