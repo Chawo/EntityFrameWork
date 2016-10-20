@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 
-namespace EntityProject
+namespace DBFirst
 {
-    class School  : DbContext
+    class Program
     {
-       // Här ska vara DBSET
-
+        static void Main(string[] args)
+        {
+        }
     }
 }

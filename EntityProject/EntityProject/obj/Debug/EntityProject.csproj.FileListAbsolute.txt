@@ -8,3 +8,6 @@ C:\Users\KC\Desktop\Test Project\EntityProject\EntityProject\bin\Debug\EntityFra
 C:\Users\KC\Desktop\Test Project\EntityProject\EntityProject\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\KC\Desktop\Test Project\EntityProject\EntityProject\obj\Debug\EntityProject.exe
 C:\Users\KC\Desktop\Test Project\EntityProject\EntityProject\obj\Debug\EntityProject.pdb
+C:\Users\Katrina\Source\Repos\EntityFrameWork\EntityProject\EntityProject\bin\Debug\EntityProject.exe.config
+C:\Users\Katrina\Source\Repos\EntityFrameWork\EntityProject\EntityProject\obj\Debug\EntityProject.exe
+C:\Users\Katrina\Source\Repos\EntityFrameWork\EntityProject\EntityProject\obj\Debug\EntityProject.pdb

@@ -21,7 +21,9 @@ namespace EntityProject
                     birthdate = DateTime.Now.AddYears(-45)
                 };
 
+                // Sparat bara i minnet
                 ctx.Student.Add(student);
+                // Här sparas det i databasen
                 ctx.SaveChanges();
             }
         }
