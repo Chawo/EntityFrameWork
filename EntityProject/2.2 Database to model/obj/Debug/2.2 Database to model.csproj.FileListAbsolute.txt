@@ -1,1 +1,10 @@
 C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\2.2 Database to model.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\2.2 Database to model.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\2.2 Database to model.pdb
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\EntityFramework.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\EntityFramework.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\obj\Debug\2.2 Database to model.csprojResolveAssemblyReference.cache
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\obj\Debug\2.2 Database to model.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\2.2 Database to model\obj\Debug\2.2 Database to model.pdb

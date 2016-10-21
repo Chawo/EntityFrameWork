@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityProject", "EntityProject\EntityProject.csproj", "{5C365C70-2550-4BFB-9620-646CB59B212D}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSecond", "DBSecond\DBSecond.csproj", "{06D0E53B-E13F-4EA4-AD9D-9E020764CA55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 Database to model", "2.2 Database to model\2.2 Database to model.csproj", "{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAgainPC", "TestAgain\TestAgainPC.csproj", "{3E831E6C-40DA-408F-83E5-5097C677CA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F90C32D1-20DC-4704-9D36-C3A33CEDEBE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E831E6C-40DA-408F-83E5-5097C677CA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E831E6C-40DA-408F-83E5-5097C677CA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E831E6C-40DA-408F-83E5-5097C677CA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E831E6C-40DA-408F-83E5-5097C677CA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

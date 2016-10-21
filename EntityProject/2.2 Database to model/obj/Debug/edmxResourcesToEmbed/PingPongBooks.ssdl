@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PingPongBooksModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PingPongBooks.dbo.AuthorISBN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AuthorISBN">
+    <Key>
+      <PropertyRef Name="AuthorID" />
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="AuthorID" Type="int" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="AuthorID" />
+    </Key>
+    <Property Name="AuthorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomeTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentMethod" Type="int" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="StoreLocation" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreTel" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Titles">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="EditionNumber" Type="int" />
+    <Property Name="Copyright" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_AuthorISBN_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="AuthorISBN" Type="Self.AuthorISBN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorID" />
+      </Principal>
+      <Dependent Role="AuthorISBN">
+        <PropertyRef Name="AuthorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorISBN_Titles">
+    <End Role="Titles" Type="Self.Titles" Multiplicity="1" />
+    <End Role="AuthorISBN" Type="Self.AuthorISBN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titles">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="AuthorISBN">
+        <PropertyRef Name="ISBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PingPongBooksModelStoreContainer">
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Titles" EntityType="Self.Titles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorISBN" EntityType="Self.AuthorISBN" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AuthorISBN].[AuthorID] AS [AuthorID], 
+    [AuthorISBN].[ISBN] AS [ISBN]
+    FROM [dbo].[AuthorISBN] AS [AuthorISBN]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_AuthorISBN_Authors" Association="Self.FK_AuthorISBN_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="AuthorISBN" EntitySet="AuthorISBN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorISBN_Titles" Association="Self.FK_AuthorISBN_Titles">
+      <End Role="Titles" EntitySet="Titles" />
+      <End Role="AuthorISBN" EntitySet="AuthorISBN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

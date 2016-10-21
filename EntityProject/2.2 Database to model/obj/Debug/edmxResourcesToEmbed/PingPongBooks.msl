@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PingPongBooksModelStoreContainer" CdmEntityContainer="PingPongBooksEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="PingPongBooksModel.Authors">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="HomeTel" ColumnName="HomeTel" />
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titles">
+      <EntityTypeMapping TypeName="PingPongBooksModel.Titles">
+        <MappingFragment StoreEntitySet="Titles">
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EditionNumber" ColumnName="EditionNumber" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AuthorISBN" TypeName="PingPongBooksModel.AuthorISBN" StoreEntitySet="AuthorISBN">
+      <EndProperty Name="Authors">
+        <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+      </EndProperty>
+      <EndProperty Name="Titles">
+        <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="PingPongBooksModel.Stores">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="StoreTel" ColumnName="StoreTel" />
+          <ScalarProperty Name="StoreLocation" ColumnName="StoreLocation" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

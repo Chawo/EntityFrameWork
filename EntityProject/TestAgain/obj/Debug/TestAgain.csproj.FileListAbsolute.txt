@@ -1,0 +1,9 @@
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\TestAgain.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\TestAgain.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\TestAgain.pdb
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\EntityFramework.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\EntityFramework.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\obj\Debug\TestAgain.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\obj\Debug\TestAgain.pdb
