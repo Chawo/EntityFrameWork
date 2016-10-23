@@ -1,0 +1,3 @@
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\bin\Debug\TestAgain.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\obj\Debug\TestAgain.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\TestAgain\obj\Debug\TestAgain.pdb
