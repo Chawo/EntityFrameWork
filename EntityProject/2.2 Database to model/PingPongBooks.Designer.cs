@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Katrina\Source\Repos\EntityFrameWork\EntityProject\2.2 Database to model\PingPongBooks.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Katrina\Desktop\EntityFrameWorkGithub\EntityProject\2.2 Database to model\PingPongBooks.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

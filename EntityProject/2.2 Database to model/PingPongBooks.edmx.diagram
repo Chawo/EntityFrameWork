@@ -6,9 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="a26bc5ade0eb4b23ac3fcf508f3cbaab" Name="Diagram1">
         <EntityTypeShape EntityType="PingPongBooksModel.Authors" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PingPongBooksModel.Titles" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PingPongBooksModel.Titles" Width="1.5" PointX="3.625" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="PingPongBooksModel.AuthorISBN" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="PingPongBooksModel.Stores" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="PingPongBooksModel.Stores" Width="1.5" PointX="5.625" PointY="1.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
