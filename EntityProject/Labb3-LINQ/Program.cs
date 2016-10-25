@@ -16,8 +16,11 @@ namespace Labb3_LINQ
             ////Console.WriteLine(Helper.ConvertStringToFloat(input) * 12);
             //Console.WriteLine(input.ExtensionsConvertFloatToString()*12);
 
-            _3 labb3 = new _3();
-            labb3.Menu();
+            //_3 labb3 = new _3();
+            //labb3.Menu();
+
+            Employee emp = new Employee();
+            emp.Menu();
 
             Console.ReadKey();
         }
