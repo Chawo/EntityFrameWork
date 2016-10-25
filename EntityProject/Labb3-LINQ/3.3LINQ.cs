@@ -26,22 +26,25 @@ namespace Labb3_LINQ
                 switch (UserInput)
                 {
                     case 1:
-                        foreach (var person in persons)
+                        var personList = from person in persons
+                                       select person;
+                        foreach (var p in personList)
                         {
-                            Console.WriteLine(person);
+                            Console.WriteLine(p);
                         }
                         Console.ReadKey();
                         Console.Clear();
-
                         break;
                         
                     case 2:
-                        foreach (var person in persons)
+
+                        var showPersonListStartWithA = from person in persons
+                                                       where person.StartsWith("A") 
+                                                       select person;
+
+                        foreach (var p in showPersonListStartWithA)
                         {
-                            if (person.StartsWith("A"))
-                            {
-                                Console.WriteLine(person);
-                            }
+                            Console.WriteLine(p); 
                         }
                         Console.ReadKey();
                         Console.Clear();

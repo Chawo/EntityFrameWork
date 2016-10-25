@@ -1,0 +1,6 @@
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\bin\Debug\Labb3-LINQ.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\obj\Debug\Labb3-LINQ.csprojResolveAssemblyReference.cache
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\bin\Debug\Labb3-LINQ.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\bin\Debug\Labb3-LINQ.pdb
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\obj\Debug\Labb3-LINQ.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb3-LINQ\obj\Debug\Labb3-LINQ.pdb
