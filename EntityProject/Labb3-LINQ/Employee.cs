@@ -19,15 +19,15 @@ namespace Labb3_LINQ
 
         public void Menu ()
         {
-            employees.Add(new Employee() { empID=1, fname = "Gopala", lname = "Johanesson", hireDate = DateTime.Now, department = "A", age = 22  } );
-            employees.Add(new Employee() { empID = 1, fname = "Shelah", lname = "Peterson", hireDate = DateTime.Now, department = "B", age = 51 });
-            employees.Add(new Employee() { empID = 1, fname = "Naveed", lname = "Gonzales", hireDate = DateTime.Now, department = "C", age = 24 });
-            employees.Add(new Employee() { empID = 1, fname = "Nosson", lname = "Ramon", hireDate = DateTime.Now, department = "A", age = 21 });
+            employees.Add(new Employee() { empID=1, fname = "Gopala", lname = "Johanesson", hireDate = DateTime.Today.AddDays(120), department = "A", age = 22  } );
+            employees.Add(new Employee() { empID = 1, fname = "Shelah", lname = "Peterson", hireDate = DateTime.Today.AddDays(-60), department = "B", age = 51 });
+            employees.Add(new Employee() { empID = 1, fname = "Naveed", lname = "Gonzales", hireDate = DateTime.Today.AddDays(-30), department = "C", age = 24 });
+            employees.Add(new Employee() { empID = 1, fname = "Nosson", lname = "Ramon", hireDate = DateTime.Today.AddDays(-312), department = "A", age = 21 });
 
-            employees.Add(new Employee() { empID = 1, fname = "Hartley", lname = "Smith", hireDate = DateTime.Now, department = "B", age = 57 });
-            employees.Add(new Employee() { empID = 1, fname = "Vilhelm", lname = "Svensson", hireDate = DateTime.Now, department = "D", age = 45 });
-            employees.Add(new Employee() { empID = 1, fname = "Jorge", lname = "Olsson", hireDate = DateTime.Now, department = "D", age = 43 });
-            employees.Add(new Employee() { empID = 1, fname = "Gaius", lname = "Stein", hireDate = DateTime.Now, department = "C", age = 37 });
+            employees.Add(new Employee() { empID = 1, fname = "Hartley", lname = "Smith", hireDate = DateTime.Today.AddDays(-515), department = "B", age = 57 });
+            employees.Add(new Employee() { empID = 1, fname = "Vilhelm", lname = "Svensson", hireDate = DateTime.Today.AddDays(-621), department = "D", age = 45 });
+            employees.Add(new Employee() { empID = 1, fname = "Jorge", lname = "Olsson", hireDate = DateTime.Today.AddDays(65), department = "D", age = 43 });
+            employees.Add(new Employee() { empID = 1, fname = "Gaius", lname = "Stein", hireDate = DateTime.Today.AddDays(12), department = "C", age = 37 });
            
             while (true)
             {
@@ -73,6 +73,23 @@ namespace Labb3_LINQ
                         }
                         Console.ReadKey();
                         Console.Clear();
+                        break;
+                    case 5:
+
+
+                        var showJunior =  employees.Where(e => e.hireDate.Year == 2016);
+                        foreach (var e in showJunior)
+                        {  
+                            Console.WriteLine($"{e.fname} {e.lname} | Hiredate: {e.hireDate}");
+                        }
+                        Console.ReadKey();
+
+                        var showFirstEmp = employees.Where(e => e.department == "A");
+                        foreach (var e in showFirstEmp)
+                        {
+                            Console.WriteLine(e.department.FirstOrDefault());
+                        }
+                        //Console.Clear();
                         break;
 
 
