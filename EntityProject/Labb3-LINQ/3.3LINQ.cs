@@ -50,19 +50,15 @@ namespace Labb3_LINQ
                         Console.Clear();
                         break; 
                     case 3:
-                        var personList = persons.Where(p => p.ToUpper().Contains("A"));
-                        foreach (var person in personList)
+                        var personListWithA = persons.Where(p => p.ToUpper().Contains("A"));
+                        foreach (var person in personListWithA)
                         {
                             Console.WriteLine(person);
                         }
                         Console.ReadKey();
                         Console.Clear();
                         break;
-                    case 4:
-                        //var searchPerson = from person in persons
-                        //                   where person != "S" && person == "A"
-                        //                   select person;
-
+                    case 4: 
                         var SearchPersonSA = persons.Where(n => n.ToUpper().StartsWith("A") && (!n.ToUpper().Contains("S")));
 
                         foreach (var p in SearchPersonSA)
