@@ -19,19 +19,19 @@ namespace Labb3_LINQ
 
         public void Menu ()
         {
-            employees.Add(new Employee() { empID=1, fname = "Gopala", lname = "Johanesson", hireDate = DateTime.Today.AddDays(120), department = "A", age = 22  } );
+            employees.Add(new Employee() { empID=1, fname = "Gopala", lname = "Johanesson", hireDate = DateTime.Today.AddDays(-120), department = "A", age = 22  } );
             employees.Add(new Employee() { empID = 1, fname = "Shelah", lname = "Peterson", hireDate = DateTime.Today.AddDays(-60), department = "B", age = 51 });
             employees.Add(new Employee() { empID = 1, fname = "Naveed", lname = "Gonzales", hireDate = DateTime.Today.AddDays(-30), department = "C", age = 24 });
             employees.Add(new Employee() { empID = 1, fname = "Nosson", lname = "Ramon", hireDate = DateTime.Today.AddDays(-312), department = "A", age = 21 });
 
             employees.Add(new Employee() { empID = 1, fname = "Hartley", lname = "Smith", hireDate = DateTime.Today.AddDays(-515), department = "B", age = 57 });
             employees.Add(new Employee() { empID = 1, fname = "Vilhelm", lname = "Svensson", hireDate = DateTime.Today.AddDays(-621), department = "D", age = 45 });
-            employees.Add(new Employee() { empID = 1, fname = "Jorge", lname = "Olsson", hireDate = DateTime.Today.AddDays(65), department = "D", age = 43 });
-            employees.Add(new Employee() { empID = 1, fname = "Gaius", lname = "Stein", hireDate = DateTime.Today.AddDays(12), department = "C", age = 37 });
+            employees.Add(new Employee() { empID = 1, fname = "Jorge", lname = "Olsson", hireDate = DateTime.Today.AddDays(-65), department = "D", age = 43 });
+            employees.Add(new Employee() { empID = 1, fname = "Gaius", lname = "Stein", hireDate = DateTime.Today.AddDays(-12), department = "C", age = 37 });
            
             while (true)
             {
-                Console.WriteLine("Menu ---------------------\n\n[1]Visa alla namn soretrade efter Efternamn\n[2]Visa alla namn sorterade efter Förnamn\n[3]Lista alla	employees för en viss avdelning\n[4]Sök ");
+                Console.WriteLine("Menu ---------------------\n\n[1]Visa alla namn soretrade efter Efternamn\n[2]Visa alla namn sorterade efter Förnamn\n[3]Lista alla	employees för en viss avdelning\n[4]Sök \n[5]Hiredate less than one year");
                 int menuInput = int.Parse(Console.ReadLine());
 
                 switch (menuInput)
@@ -75,19 +75,19 @@ namespace Labb3_LINQ
                         Console.Clear();
                         break;
                     case 5:
-
-
-                        var showJunior =  employees.Where(e => e.hireDate.Year == 2016);
+                        DateTime today = DateTime.Today;
+                        var showJunior = employees.Where(e => (today - e.hireDate).Days < 365);
                         foreach (var e in showJunior)
                         {  
-                            Console.WriteLine($"{e.fname} {e.lname} | Hiredate: {e.hireDate}");
+                            Console.WriteLine($"{e.fname} {e.lname} | Hiredate: {e.hireDate.ToShortDateString()}");
                         }
                         Console.ReadKey();
 
-                        var showFirstEmp = employees.Where(e => e.department == "A");
+                        Console.WriteLine("\n\nSista extra uppgift");
+                        var showFirstEmp = employees.Where(e => e.department.SingleOrDefault() == 'A' );
                         foreach (var e in showFirstEmp)
                         {
-                            Console.WriteLine(e.department.FirstOrDefault());
+                            Console.WriteLine($"{e.fname} {e.lname} || {e.department}".SingleOrDefault());
                         }
                         //Console.Clear();
                         break;
