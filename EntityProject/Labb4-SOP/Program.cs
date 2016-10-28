@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb3_LINQ
+namespace Labb4_SOP
 {
-    static class ListHelper
+    class Program
     {
-        public static string Menu(string userInput)
+        static void Main(string[] args)
         {
-            int menuInput = int.Parse(Console.ReadLine());
         }
     }
 }
