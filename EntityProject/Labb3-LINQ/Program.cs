@@ -19,8 +19,11 @@ namespace Labb3_LINQ
             //_3 labb3 = new _3();
             //labb3.Menu();
 
-            Employee emp = new Employee();
-            emp.Menu();
+            //Employee emp = new Employee();
+            //emp.Menu();
+
+            Application app = new Application();
+            app.MenuFromEmp();
 
             Console.ReadKey();
         }
