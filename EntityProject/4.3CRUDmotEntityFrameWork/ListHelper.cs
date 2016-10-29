@@ -15,7 +15,7 @@ namespace _4._3CRUDmotEntityFrameWork
             {
                 foreach (var a in ctx.Authors)
                 {
-                    Console.WriteLine($"{a.FirstName} {a.LastName}\n");
+                    Console.WriteLine($"{a.FirstName} {a.LastName}\nID: {a.AuthorID}");
                 }
             }
         }
@@ -104,10 +104,10 @@ namespace _4._3CRUDmotEntityFrameWork
                     else
                     {
                         Console.WriteLine($"Result:\nID: {a.AuthorID}\nAuthor: {a.FirstName} {a.LastName}");
-                         
+
                     }
 
-                } 
+                }
 
                 Console.WriteLine("Write the new Firstname: ");
                 string newFname = Console.ReadLine();
@@ -124,5 +124,41 @@ namespace _4._3CRUDmotEntityFrameWork
 
             }
         }
+
+        public static void DeleteAAuthour()
+        {
+            using (var ctx = new BooksEntities())
+            {
+
+                Console.WriteLine("Write the ID for the Authour you want to delete.");
+                int deleteAuthour = int.Parse(Console.ReadLine());
+
+                var delete = (from a in ctx.Authors
+                              where a.AuthorID == deleteAuthour
+                              select a).FirstOrDefault();
+
+                ctx.Authors.Remove(delete);
+                ctx.SaveChanges();
+            }
+        }
+
+        public static void UpdateAuthourAge()
+        {
+            using (var ctx = new BooksEntities())
+            {
+
+                Console.WriteLine("Write the ID for the Authour you want to delete.");
+                int deleteAuthour = int.Parse(Console.ReadLine());
+
+                var delete = (from a in ctx.Authors
+                              where a.AuthorID == deleteAuthour
+                              select a).FirstOrDefault();
+
+                ctx.Authors.Remove(delete);
+                ctx.SaveChanges();
+            }
+        }
+
     }
 }
+
