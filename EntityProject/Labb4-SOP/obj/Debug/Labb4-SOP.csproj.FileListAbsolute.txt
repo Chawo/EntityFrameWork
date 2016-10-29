@@ -1,0 +1,6 @@
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\bin\Debug\Labb4-SOP.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\obj\Debug\Labb4-SOP.csprojResolveAssemblyReference.cache
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\bin\Debug\Labb4-SOP.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\bin\Debug\Labb4-SOP.pdb
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\obj\Debug\Labb4-SOP.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\Labb4-SOP\obj\Debug\Labb4-SOP.pdb

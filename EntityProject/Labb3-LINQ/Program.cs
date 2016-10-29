@@ -21,9 +21,7 @@ namespace Labb3_LINQ
 
             //Employee emp = new Employee();
             //emp.Menu();
-
-            Application app = new Application();
-            app.MenuFromEmp();
+            
 
             Console.ReadKey();
         }
