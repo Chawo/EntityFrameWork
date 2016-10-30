@@ -1,0 +1,10 @@
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.exe.config
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.pdb
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\Labb4-4.3CRUDmotEntityFrameWork.csprojResolveAssemblyReference.cache
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\4.3CRUDmotEntityFrameWork.exe
+C:\Users\KC\Desktop\Skola\EntityFrameWork\Labb\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\4.3CRUDmotEntityFrameWork.pdb
