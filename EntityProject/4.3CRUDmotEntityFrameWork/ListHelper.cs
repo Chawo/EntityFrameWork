@@ -147,18 +147,40 @@ namespace _4._3CRUDmotEntityFrameWork
             using (var ctx = new BooksEntities())
             {
 
-                Console.WriteLine("Write the ID for the Authour you want to delete.");
-                int deleteAuthour = int.Parse(Console.ReadLine());
+                Console.WriteLine("Write the ID for the Authour you want to update.");
+                int updateAuthour = int.Parse(Console.ReadLine());
 
-                var delete = (from a in ctx.Authors
-                              where a.AuthorID == deleteAuthour
-                              select a).FirstOrDefault();
+                var updateAge = ctx.Authors.Where(a => a.AuthorID == updateAuthour).FirstOrDefault();
+                try
+                {
+                    if (updateAge == null)
+                    {
+                        throw new Exception("Invalid ID, there's no ID in our Database");
+                    }
+                    Console.WriteLine("The new age: ");
+                    DateTime date = DateTime.Parse(Console.ReadLine());
 
-                ctx.Authors.Remove(delete);
-                ctx.SaveChanges();
+                    updateAge.Age = date;
+                    ctx.SaveChanges();
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine("Error: " + e.ToString());
+                    Console.ReadKey();
+                    
+                }
+
+               
+
+
+
+
+
             }
         }
 
     }
 }
+
 

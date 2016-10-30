@@ -25,6 +25,7 @@ namespace _4._3CRUDmotEntityFrameWork
         public string LastName { get; set; }
         public string HomeTel { get; set; }
         public Nullable<int> PaymentMethod { get; set; }
+        public Nullable<System.DateTime> Age { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Titles> Titles { get; set; }

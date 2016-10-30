@@ -50,7 +50,7 @@ namespace _4._3CRUDmotEntityFrameWork
                         Console.ReadKey();
                         break;
                     case 7:
-                        ListHelper.DeleteAAuthour();
+                        ListHelper.UpdateAuthourAge();
                         Console.Clear();
                         Console.ReadKey();
                         break;
