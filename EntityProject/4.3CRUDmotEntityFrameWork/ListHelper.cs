@@ -11,7 +11,7 @@ namespace _4._3CRUDmotEntityFrameWork
     {
         public static void ShowAllAuthors()
         {
-            using (var ctx = new BooksEntities())
+            using (var ctx = new Books1Entities())
             {
                 foreach (var a in ctx.Authors)
                 {
@@ -20,14 +20,11 @@ namespace _4._3CRUDmotEntityFrameWork
             }
         }
 
-        public static void SearchFLname()
+        public static void SearchFLname(string searchInput)
         {
-            using (var ctx = new BooksEntities())
-            {
-                Console.WriteLine("Search (Firstname or Lastname)");
-                string searchInput = Console.ReadLine();
-
-                var search = ctx.Authors.Where(x => x.FirstName.ToLower().ToUpper().Contains(searchInput) || x.LastName.ToLower().ToUpper().Contains(searchInput));
+            using (var ctx = new Books1Entities())
+            { 
+                var search = ctx.Authors.Where(x => x.FirstName.ToLower().ToUpper().StartsWith(searchInput) || x.LastName.ToLower().ToUpper().StartsWith(searchInput));
                 foreach (var a in search)
                 {
                     Console.WriteLine($"{a.FirstName} {a.LastName}");
@@ -35,13 +32,10 @@ namespace _4._3CRUDmotEntityFrameWork
             }
         }
 
-        public static void SearchAuthorsByID()
+        public static void SearchAuthorsByID(int searchInput)
         {
-            using (var ctx = new BooksEntities())
-            {
-                Console.WriteLine("Search Authours by ID");
-                int searchInput = int.Parse(Console.ReadLine());
-
+            using (var ctx = new Books1Entities())
+            { 
                 var search = ctx.Authors.Where(x => x.AuthorID == searchInput);
                 foreach (var a in search)
                 {
@@ -51,28 +45,18 @@ namespace _4._3CRUDmotEntityFrameWork
             }
         }
 
-        public static void AddANewAuthour()
+        public static void AddANewAuthour(int authorID, string fname, string lname, string homeTel, int paymentMethod, DateTime date)
         {
-            using (var ctx = new BooksEntities())
-            {
-                Console.WriteLine("Firstname: ");
-                string fname = Console.ReadLine();
-
-                Console.WriteLine("LastName: ");
-                string lname = Console.ReadLine();
-
-                Console.WriteLine("HomeTel: ");
-                string homeTel = Console.ReadLine();
-
-                Console.WriteLine("PaymentMethod: ");
-                int paymentMethod = int.Parse(Console.ReadLine());
-
+            using (var ctx = new Books1Entities())
+            { 
                 Authors author = new Authors()
                 {
+                    AuthorID = authorID,
                     FirstName = fname,
                     LastName = lname,
                     HomeTel = homeTel,
-                    PaymentMethod = paymentMethod
+                    PaymentMethod = paymentMethod,
+                    Age = date
                 };
 
                 ctx.Authors.Add(author);
@@ -81,15 +65,10 @@ namespace _4._3CRUDmotEntityFrameWork
 
         }
 
-        public static void UpdateAuthoursName()
+        public static void UpdateAuthoursName(string searchAuthorFname, string searchAuthorLname)
         {
-            using (var ctx = new BooksEntities())
-            {
-                Console.WriteLine("Write the Firstname of the Authour");
-                string searchAuthorFname = Console.ReadLine();
-                Console.WriteLine("Write the Lastname of the Authour");
-                string searchAuthorLname = Console.ReadLine();
-
+            using (var ctx = new Books1Entities())
+            { 
                 var searchAuthorNameToUpdate = ctx.Authors.Where(x => x.FirstName.ToUpper().ToLower().Contains(searchAuthorFname) && x.LastName.ToUpper().ToLower().Contains(searchAuthorLname));
 
                 foreach (var a in searchAuthorNameToUpdate)
@@ -125,14 +104,10 @@ namespace _4._3CRUDmotEntityFrameWork
             }
         }
 
-        public static void DeleteAAuthour()
+        public static void DeleteAAuthour(int deleteAuthour)
         {
-            using (var ctx = new BooksEntities())
-            {
-
-                Console.WriteLine("Write the ID for the Authour you want to delete.");
-                int deleteAuthour = int.Parse(Console.ReadLine());
-
+            using (var ctx = new Books1Entities())
+            { 
                 var delete = (from a in ctx.Authors
                               where a.AuthorID == deleteAuthour
                               select a).FirstOrDefault();
@@ -142,14 +117,10 @@ namespace _4._3CRUDmotEntityFrameWork
             }
         }
 
-        public static void UpdateAuthourAge()
+        public static void UpdateAuthourAge(int updateAuthour)
         {
-            using (var ctx = new BooksEntities())
-            {
-
-                Console.WriteLine("Write the ID for the Authour you want to update.");
-                int updateAuthour = int.Parse(Console.ReadLine());
-
+            using (var ctx = new Books1Entities())
+            { 
                 var updateAge = ctx.Authors.Where(a => a.AuthorID == updateAuthour).FirstOrDefault();
                 try
                 {

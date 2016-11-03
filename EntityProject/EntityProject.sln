@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityProject", "EntityProject\EntityProject.csproj", "{5C365C70-2550-4BFB-9620-646CB59B212D}"
 EndProject
@@ -20,6 +20,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4-SOP", "Labb4-SOP\Labb4-SOP.csproj", "{2A00B419-84CF-4A0A-8C86-6543449DDCEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4-4.3CRUDmotEntityFrameWork", "4.3CRUDmotEntityFrameWork\Labb4-4.3CRUDmotEntityFrameWork.csproj", "{26300721-3749-4FF8-A892-83D84FD25CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{8AA2D370-5719-44FD-BF78-AAA7DBFF2BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb-5.1", "Labb-5.1\Labb-5.1.csproj", "{7EFDB8BA-6D85-4CE2-9EF5-045221BA6FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb6.1.1", "Labb6.1.1\Labb6.1.1.csproj", "{92D903E5-4D68-4F20-92B5-9CC03755392B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obligatoriskprojekt0.1", "Obligatoriskprojekt0.1\Obligatoriskprojekt0.1.csproj", "{ED225BFA-B912-45DB-925B-AF89EA75B056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{26300721-3749-4FF8-A892-83D84FD25CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26300721-3749-4FF8-A892-83D84FD25CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26300721-3749-4FF8-A892-83D84FD25CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA2D370-5719-44FD-BF78-AAA7DBFF2BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA2D370-5719-44FD-BF78-AAA7DBFF2BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA2D370-5719-44FD-BF78-AAA7DBFF2BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA2D370-5719-44FD-BF78-AAA7DBFF2BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFDB8BA-6D85-4CE2-9EF5-045221BA6FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFDB8BA-6D85-4CE2-9EF5-045221BA6FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFDB8BA-6D85-4CE2-9EF5-045221BA6FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFDB8BA-6D85-4CE2-9EF5-045221BA6FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D903E5-4D68-4F20-92B5-9CC03755392B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D903E5-4D68-4F20-92B5-9CC03755392B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D903E5-4D68-4F20-92B5-9CC03755392B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D903E5-4D68-4F20-92B5-9CC03755392B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED225BFA-B912-45DB-925B-AF89EA75B056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED225BFA-B912-45DB-925B-AF89EA75B056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED225BFA-B912-45DB-925B-AF89EA75B056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED225BFA-B912-45DB-925B-AF89EA75B056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

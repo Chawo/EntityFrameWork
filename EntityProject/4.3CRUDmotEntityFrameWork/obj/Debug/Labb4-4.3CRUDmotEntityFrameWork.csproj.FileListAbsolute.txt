@@ -18,3 +18,13 @@ C:\Users\Katrina\Desktop\GithuLabEntity\EntityProject\4.3CRUDmotEntityFrameWork\
 C:\Users\Katrina\Desktop\GithuLabEntity\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.xml
 C:\Users\Katrina\Desktop\GithuLabEntity\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Katrina\Desktop\GithuLabEntity\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\Labb4-4.3CRUDmotEntityFrameWork.csprojResolveAssemblyReference.cache
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.exe.config
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.exe
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\4.3CRUDmotEntityFrameWork.pdb
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.dll
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.xml
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\Labb4-4.3CRUDmotEntityFrameWork.csprojResolveAssemblyReference.cache
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\4.3CRUDmotEntityFrameWork.exe
+C:\Users\Katrina\Desktop\EntityFrameWork\EntityProject\4.3CRUDmotEntityFrameWork\obj\Debug\4.3CRUDmotEntityFrameWork.pdb

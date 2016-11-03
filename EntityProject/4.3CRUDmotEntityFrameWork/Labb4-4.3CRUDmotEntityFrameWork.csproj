@@ -56,7 +56,7 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="Authors.cs">
-      <DependentUpon>Books.tt</DependentUpon>
+      <DependentUpon>Books1.tt</DependentUpon>
     </Compile>
     <Compile Include="Books.Context.cs">
       <AutoGen>True</AutoGen>
@@ -73,14 +73,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Books.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Books1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Books1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Books1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Books1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Books1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Books1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="ListHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stores.cs">
-      <DependentUpon>Books.tt</DependentUpon>
+      <DependentUpon>Books1.tt</DependentUpon>
     </Compile>
     <Compile Include="Titles.cs">
-      <DependentUpon>Books.tt</DependentUpon>
+      <DependentUpon>Books1.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +106,13 @@
     </EntityDeploy>
     <None Include="Books.edmx.diagram">
       <DependentUpon>Books.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Books1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Books1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Books1.edmx.diagram">
+      <DependentUpon>Books1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -104,6 +126,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Books.edmx</DependentUpon>
       <LastGenOutput>Books.cs</LastGenOutput>
+    </Content>
+    <Content Include="Books1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Books1.edmx</DependentUpon>
+      <LastGenOutput>Books1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Books1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Books1.edmx</DependentUpon>
+      <LastGenOutput>Books1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

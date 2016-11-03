@@ -21,38 +21,69 @@ namespace _4._3CRUDmotEntityFrameWork
                 {
                     case 1:
                         ListHelper.ShowAllAuthors();
-                        Console.Clear();
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 2:
-                        ListHelper.SearchFLname();
-                        Console.Clear();
+                        Console.WriteLine("Search (Firstname or Lastname)");
+                        string searchInput = Console.ReadLine();
+                        ListHelper.SearchFLname(searchInput);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 3:
-                        ListHelper.SearchAuthorsByID();
-                        Console.Clear();
+                        Console.WriteLine("Search Authours by ID");
+                        int searchInputID = int.Parse(Console.ReadLine()); 
+                        ListHelper.SearchAuthorsByID(searchInputID);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 4:
-                        ListHelper.AddANewAuthour();
-                        Console.Clear();
+                        Console.WriteLine("ID: ");
+                        int authorID = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Firstname: ");
+                        string fname = Console.ReadLine();
+
+                        Console.WriteLine("LastName: ");
+                        string lname = Console.ReadLine();
+
+                        Console.WriteLine("HomeTel: ");
+                        string homeTel = Console.ReadLine();
+
+                        Console.WriteLine("PaymentMethod: ");
+                        int paymentMethod = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Age: ");
+                        DateTime date = DateTime.Parse(Console.ReadLine());
+
+                        ListHelper.AddANewAuthour(authorID, fname, lname, homeTel, paymentMethod, date);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 5:
-                        ListHelper.UpdateAuthoursName();
-                        Console.Clear();
+                        Console.WriteLine("Write the Firstname of the Authour");
+                        string searchAuthorFname = Console.ReadLine();
+                        Console.WriteLine("Write the Lastname of the Authour");
+                        string searchAuthorLname = Console.ReadLine();
+
+                        ListHelper.UpdateAuthoursName(searchAuthorFname, searchAuthorLname);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 6:
-                        ListHelper.DeleteAAuthour();
-                        Console.Clear();
+                        Console.WriteLine("Write the ID for the Authour you want to delete.");
+                        int deleteAuthour = int.Parse(Console.ReadLine());
+                        ListHelper.DeleteAAuthour(deleteAuthour);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 7:
-                        ListHelper.UpdateAuthourAge();
-                        Console.Clear();
+                        Console.WriteLine("Write the ID for the Authour you want to update.");
+                        int updateAuthour = int.Parse(Console.ReadLine());
+                        ListHelper.UpdateAuthourAge(updateAuthour);
                         Console.ReadKey();
+                        Console.Clear();
                         break;
                     default:
                         break;
